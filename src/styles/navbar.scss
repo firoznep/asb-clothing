@@ -1,0 +1,28 @@
+@mixin d-flexes($justify: space-between) {
+  display: flex;
+  justify-content: $justify;
+}
+
+$nav-color: #3030ff;
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0.5rem;
+  @include d-flexes();
+  background-color: $nav-color;
+
+  .navbar-options {
+    width: 50%;
+    @include d-flexes(space-evenly);
+    // background: #acacac;
+  }
+}
