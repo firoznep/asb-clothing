@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/asb-clothing/static/css/main.9c47d6a0.chunk.css",
+    "main.js": "/asb-clothing/static/js/main.152566b5.chunk.js",
+    "main.js.map": "/asb-clothing/static/js/main.152566b5.chunk.js.map",
+    "runtime-main.js": "/asb-clothing/static/js/runtime-main.c411bbb3.js",
+    "runtime-main.js.map": "/asb-clothing/static/js/runtime-main.c411bbb3.js.map",
+    "static/js/2.0042713c.chunk.js": "/asb-clothing/static/js/2.0042713c.chunk.js",
+    "static/js/2.0042713c.chunk.js.map": "/asb-clothing/static/js/2.0042713c.chunk.js.map",
+    "index.html": "/asb-clothing/index.html",
+    "precache-manifest.7f350ad59fc47e4e8b290537b3d5063f.js": "/asb-clothing/precache-manifest.7f350ad59fc47e4e8b290537b3d5063f.js",
+    "service-worker.js": "/asb-clothing/service-worker.js",
+    "static/css/main.9c47d6a0.chunk.css.map": "/asb-clothing/static/css/main.9c47d6a0.chunk.css.map",
+    "static/js/2.0042713c.chunk.js.LICENSE.txt": "/asb-clothing/static/js/2.0042713c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c411bbb3.js",
+    "static/js/2.0042713c.chunk.js",
+    "static/css/main.9c47d6a0.chunk.css",
+    "static/js/main.152566b5.chunk.js"
+  ]
+}
