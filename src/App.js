@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 import ShopPage from './pages/ShopPage';
 import NavBar from './components/NavBar';
 import PageNotFound from './pages/PageNotFound';
+import SigninSignout from './pages/SigninSignout';
 
 class App extends React.Component {
   render() {
@@ -14,8 +15,12 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route exact path="/asb-clothing" component={HomePage} />
-
           <Route exact path="/asb-clothing/shop" component={ShopPage} />
+          <Route
+            exact
+            path="/asb-clothing/signin-signout"
+            component={SigninSignout}
+          />
           <Route component={PageNotFound} />
         </Switch>
       </div>

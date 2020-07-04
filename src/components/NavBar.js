@@ -11,7 +11,7 @@ const NavBar = ({ brand, shop, home, signin, collectionPreview }) => {
         <Link to="/asb-clothing/shop">{shop}</Link>
       </div>
 
-      <Link to="/asb-clothing/signin">{signin}</Link>
+      <Link to="/asb-clothing/signin-signout">{signin}</Link>
     </div>
   );
 };

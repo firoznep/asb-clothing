@@ -1,0 +1,11 @@
+@mixin d-flexes {
+  display: flex;
+  flex-direction: column;
+  // justify-content: space-between;
+  margin: 2rem;
+}
+.sign-in {
+  @include d-flexes();
+  // width: 40%;
+  height: 50vh;
+}
