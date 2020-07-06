@@ -1,15 +1,15 @@
 import React from 'react';
 import '../styles/sign-in.scss';
 import InputField from './InputField';
+import CustomButton from './Button';
+import { signInWithGoogle } from '../firebase/firebase.util';
 
 class SignIn extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // user: {
       email: '',
       password: '',
-      // },
     };
   }
 
@@ -31,56 +31,29 @@ class SignIn extends React.Component {
       <div className="sign-in">
         <h2>I already have an account</h2>
         <p>SignIn with your account</p>
-        <InputField
-          type="text"
-          label="email"
-          name="email"
-          isValue={this.state.email.length}
-          onChange={this.handleChange}
-        />
 
-        <InputField
-          type="password"
-          label="password"
-          name="password"
-          isValue={this.state.password.length}
-          onChange={this.handleChange}
-        />
+        <form>
+          <InputField
+            type="email"
+            label="email"
+            name="email"
+            value={this.state.email}
+            onChange={this.handleChange}
+            required
+            autoComplete="off"
+          />
 
-        {/* <form onSubmit={this.handleSubmit}>
-          <div className="email-control">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              onChange={this.handleChange}
-              // autoComplete="off"
-              required
-            />
+          <InputField
+            type="password"
+            label="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.handleChange}
+          />
 
-            <label
-              className={`${
-                this.state.email.length ? 'shrink' : ''
-              } email-label`}
-              htmlFor="email"
-            >
-              Email:{' '}
-            </label>
-          </div>
-
-          <div className="password-control">
-            <label htmlFor="password">Password: </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              onChange={this.handleChange}
-              required
-            />
-          </div>
-
-          <button type="submit">Submit</button>
-        </form> */}
+          <CustomButton type="submit">SignIn</CustomButton>
+        </form>
+        <CustomButton onClick={signInWithGoogle}>SignInWithGoogle</CustomButton>
       </div>
     );
   }

@@ -1,5 +1,13 @@
-.preview {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.collection-preview {
+  margin: 1rem 0.5rem;
+
+  h2 {
+    padding: 0 0.4rem;
+  }
+
+  .preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

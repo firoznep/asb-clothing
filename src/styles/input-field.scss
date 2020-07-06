@@ -13,9 +13,7 @@
 .form-input {
   position: relative;
 
-  &:not(:last-child) {
-    margin: 2rem 0;
-  }
+  margin: 2rem 0;
 
   label {
     position: absolute;
