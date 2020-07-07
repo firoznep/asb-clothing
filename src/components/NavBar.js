@@ -17,12 +17,12 @@ const NavBar = ({ brand, shop, home, signin, currentUser }) => {
       </div>
       {currentUser ? (
         <div className="signout-content">
-          <img
+          {/* <img
             src={`${currentUser.photoURL}`}
             alt="login icon"
             className="login-icon"
-          />
-
+          /> */}
+          <span>{`Hi, ${currentUser.displayName} `}</span>
           <div className="option sign-out-btn" onClick={() => auth.signOut()}>
             SignOut
           </div>
