@@ -1,8 +1,11 @@
 import React from 'react';
 import '../styles/shop-item.scss';
 import CustomButton from './Button';
+import { connect } from 'react-redux';
+import { addItem } from '../reducers/cart/cartAction';
 
-const ShopItem = ({ id, imageUrl, name, price }) => {
+const ShopItem = ({ item, addItem }) => {
+  const { imageUrl, name, price } = item;
   return (
     <div className="shop-item">
       <div
@@ -15,9 +18,13 @@ const ShopItem = ({ id, imageUrl, name, price }) => {
         <span>{name}</span>
         <span>{price}</span>
       </div>
-      <CustomButton> Add To Cart</CustomButton>
+      <CustomButton onClick={() => addItem(item)}> Add To Cart</CustomButton>
     </div>
   );
 };
 
-export default ShopItem;
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, mapDispatchToProps)(ShopItem);

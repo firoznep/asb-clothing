@@ -1,0 +1,21 @@
+.cart-item {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+
+  img {
+    width: 80px;
+  }
+
+  .cart-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}
