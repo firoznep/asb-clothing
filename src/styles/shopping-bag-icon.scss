@@ -1,0 +1,19 @@
+.shopping-bag-icon-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  margin: 0 15px;
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .item {
+    position: absolute;
+    top: 15px;
+  }
+}

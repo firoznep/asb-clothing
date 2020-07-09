@@ -10,4 +10,13 @@
     padding: 5px 0;
     letter-spacing: 4px;
   }
+
+  .custom-btn-container {
+    display: flex;
+    justify-content: space-between;
+
+    button[type='submit'] {
+      margin-right: 1rem;
+    }
+  }
 }

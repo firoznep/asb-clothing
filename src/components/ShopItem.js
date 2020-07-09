@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/shop-item.scss';
+import CustomButton from './Button';
 
 const ShopItem = ({ id, imageUrl, name, price }) => {
   return (
@@ -14,6 +15,7 @@ const ShopItem = ({ id, imageUrl, name, price }) => {
         <span>{name}</span>
         <span>{price}</span>
       </div>
+      <CustomButton> Add To Cart</CustomButton>
     </div>
   );
 };

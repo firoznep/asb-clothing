@@ -1,5 +1,7 @@
 .sign-up {
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
   p {
     letter-spacing: 2px;
   }

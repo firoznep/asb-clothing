@@ -20,7 +20,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 100;
 
   padding: 0.5rem;
   @include d-flexes();
@@ -33,32 +33,37 @@ a {
     // background: #acacac;
   }
 
-  .signout-content {
+  .login-container {
     display: flex;
     align-items: center;
 
-    .sign-out-btn {
-      cursor: pointer;
-      background-color: green;
-      color: white;
-      padding: 5px 10px;
-      border: 1px solid green;
-      border-radius: 5px;
-      transition: 0.3s;
-      vertical-align: middle;
-      margin-left: 10px;
-      &:hover {
-        background-color: #fff;
-        color: #f00000;
-        border: 1px solid #f00000;
-      }
-    }
+    .signout-content {
+      display: flex;
+      align-items: center;
 
-    .login-icon {
-      width: 40px;
-      margin-right: 5px;
-      border: 1px solid green;
-      border-radius: 50%;
+      .sign-out-btn {
+        cursor: pointer;
+        background-color: green;
+        color: white;
+        padding: 5px 10px;
+        border: 1px solid green;
+        border-radius: 5px;
+        transition: 0.3s;
+        vertical-align: middle;
+        margin-left: 10px;
+        &:hover {
+          background-color: #fff;
+          color: #f00000;
+          border: 1px solid #f00000;
+        }
+      }
+
+      .login-icon {
+        width: 40px;
+        margin-right: 5px;
+        border: 1px solid green;
+        border-radius: 50%;
+      }
     }
   }
 }

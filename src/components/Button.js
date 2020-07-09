@@ -1,11 +1,16 @@
 import React from 'react';
 import '../styles/custom-btn.scss';
 
-const CustomButton = ({ children, ...otherProps }) => {
+const CustomButton = ({ children, colorInverted, ...otherProps }) => {
   return (
-    <div className="btn-custom">
-      <button {...otherProps}>{children}</button>
-    </div>
+    <React.Fragment>
+      <button
+        className={`${colorInverted ? 'inverted' : ''} btn-custom`}
+        {...otherProps}
+      >
+        {children}
+      </button>
+    </React.Fragment>
   );
 };
 
